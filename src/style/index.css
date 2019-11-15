@@ -1,0 +1,957 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  list-style: none;
+  text-decoration: none;
+}
+.wrap {
+  width: 1240px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/*头部*/
+header {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+}
+header .wrap {
+  height: 82px;
+  /*导航*/
+  /*搜索框*/
+  /*用户登录与购物车*/
+}
+header .wrap h1 {
+  float: left;
+}
+header .wrap h1 .icon-meizu {
+  font-size: 24px;
+  line-height: 82px;
+  color: #fff;
+}
+header .wrap .nav {
+  float: left;
+  height: 100%;
+  position: relative;
+  left: 190px;
+}
+header .wrap .nav li {
+  float: left;
+  height: 100%;
+}
+header .wrap .nav li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  margin: 30px 20px;
+}
+header .wrap .nav li a:hover {
+  color: #00b9f2;
+}
+header .wrap .search {
+  float: left;
+  position: relative;
+  left: 190px;
+  background: #fff;
+  margin: 26px 5px 0 10px;
+  width: 168px;
+  height: 28px;
+  border-radius: 14px;
+}
+header .wrap .search input {
+  display: block;
+  border: none;
+  padding: 0;
+  outline: 0;
+  width: 127px;
+  height: 20px;
+  margin-left: 15px;
+  margin-top: 5px;
+  transition: width 0.5s;
+  font-size: 12px;
+  line-height: 20px;
+  color: #333;
+  background: transparent;
+  box-sizing: content-box;
+  outline-offset: 0;
+}
+header .wrap .search .icon-glass {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-position: 50%;
+  cursor: pointer;
+  line-height: 32px;
+  text-align: center;
+  font-size: 22px;
+}
+header .wrap .user {
+  float: right;
+  color: #fff;
+  font-weight: 900;
+  margin: 30px 10px 0 8px;
+}
+header .wrap .user .icon-my-select {
+  font-size: 26px;
+}
+header .wrap .user .icon-gouwuche {
+  font-size: 26px;
+  color: #fff;
+  text-decoration: none;
+}
+/*轮播图*/
+.banner {
+  height: 680px;
+  position: relative;
+}
+.banner nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15192px;
+  height: 680px;
+}
+.banner nav li {
+  float: left;
+  width: 1899px;
+  height: 100%;
+  overflow: hidden;
+}
+.banner nav li a {
+  display: block;
+  width: 1899px;
+  height: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.banner nav li a img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+/*主体*/
+main {
+  background: #f4f4f4;
+  overflow: hidden;
+  /*头部*/
+  /*手机*/
+  /*声学*/
+  /*智能配件*/
+  /*生活*/
+  /*社区*/
+  /*flyme*/
+  /*video*/
+}
+main .main-top {
+  height: 282px;
+  padding-bottom: 45px;
+  background: #fff;
+  margin-bottom: 50px;
+}
+main .main-top ul {
+  height: 100%;
+}
+main .main-top ul li {
+  margin-top: 45px;
+  width: 310px;
+  float: left;
+}
+main .main-top ul li a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+main .main-top ul li a img {
+  height: 130px;
+}
+main .main-top ul li a b {
+  display: block;
+  font-size: 20px;
+  color: #333;
+}
+main .main-top ul li a span {
+  color: #999;
+}
+main .main-phone {
+  font-size: 30px;
+  text-align: center;
+}
+main .main-phone h3 {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+main .main-phone .imgbox {
+  position: relative;
+  display: block;
+  height: 450px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+main .main-phone .imgbox img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+main .main-phone .phone {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+main .main-phone .phone li {
+  float: left;
+  position: relative;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+main .main-phone .phone li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+main .main-phone .phone li a span {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: linear-gradient(120deg, #ff3149, #ff64a6);
+  font-size: 16px;
+  line-height: 60px;
+  color: #fff;
+  border-radius: 50%;
+}
+main .main-phone .phone li a .newphone {
+  background-image: linear-gradient(120deg, #ff910e, #ffd037);
+}
+main .main-phone .phone li:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+main .main-phone .phone .big {
+  position: relative;
+  width: 615px;
+  height: 610px;
+  margin-bottom: 10px;
+}
+main .main-phone .phone .big div {
+  position: absolute;
+  top: 58px;
+  width: 100%;
+}
+main .main-phone .phone .big div .name {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 3px;
+}
+main .main-phone .phone .big div .intr {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+main .main-phone .phone .big div .price {
+  color: #c00;
+  font-size: 22px;
+}
+main .main-phone .phone .big img {
+  width: 460px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 460px;
+  margin-left: -250px;
+}
+main .main-phone .phone .bigright {
+  float: right;
+}
+main .main-phone .phone .smallimg {
+  width: 303px;
+  height: 375px;
+  margin-right: 9px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+main .main-phone .phone .smallimg .name {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+main .main-phone .phone .smallimg .intr {
+  color: #999;
+  font-size: 14px;
+}
+main .main-phone .phone .smallimg .price {
+  color: #c00;
+  font-size: 22px;
+}
+main .main-phone .phone .smallimg img {
+  width: 230px;
+  margin-top: 30px;
+}
+main .main-phone .phone .nomargin {
+  margin: 0;
+}
+main .music {
+  font-size: 30px;
+  text-align: center;
+}
+main .music h3 {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+main .music .imgbox {
+  position: relative;
+  display: block;
+  height: 450px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+main .music .imgbox img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+main .music .music-list {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+main .music .music-list li {
+  float: left;
+  position: relative;
+  width: 303px;
+  height: 375px;
+  margin-right: 9px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+main .music .music-list li:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+main .music .music-list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+main .music .music-list li a span {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: linear-gradient(120deg, #ff3149, #ff64a6);
+  font-size: 16px;
+  line-height: 60px;
+  color: #fff;
+  border-radius: 50%;
+}
+main .music .music-list li a .hot {
+  background-image: linear-gradient(120deg, #ff910e, #ffd037);
+}
+main .music .music-list li a img {
+  width: 230px;
+  height: 230px;
+  margin-top: 30px;
+}
+main .music .music-list li a .box-ad-info {
+  position: absolute;
+  top: 267px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+main .music .music-list li a .box-ad-info .name {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+}
+main .music .music-list li a .box-ad-info .intr {
+  color: #fff;
+}
+main .music .music-list li a .box-ad-info .price {
+  color: #ebce6b;
+  font-size: 24px;
+  font-weight: 700;
+}
+main .music .music-list li a .smallbox-info {
+  position: absolute;
+  top: 270px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+main .music .music-list li a .smallbox-info .name {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+main .music .music-list li a .smallbox-info .intr {
+  color: #999;
+}
+main .music .music-list li a .smallbox-info .price {
+  color: #c00;
+  font-size: 22px;
+}
+main .music .music-list .left img {
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+}
+main .music .music-list .nomargin {
+  margin: 0;
+}
+main .parts {
+  text-align: center;
+  font-size: 30px;
+}
+main .parts h3 {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+main .parts .imgbox {
+  position: relative;
+  display: block;
+  height: 450px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+main .parts .imgbox:hover {
+  opacity: 0.85;
+}
+main .parts .imgbox img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+main .parts .partbox {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+main .parts .partbox li {
+  float: left;
+  position: relative;
+  width: 303px;
+  height: 375px;
+  margin-right: 9px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+main .parts .partbox li:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+main .parts .partbox li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+main .parts .partbox li a img {
+  width: 230px;
+  margin-top: 30px;
+}
+main .parts .partbox li a .box-ad-info {
+  position: absolute;
+  top: 267px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+main .parts .partbox li a .box-ad-info .name {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+}
+main .parts .partbox li a .box-ad-info .intr {
+  color: #fff;
+}
+main .parts .partbox li a .box-ad-info .price {
+  color: #ebce6b;
+  font-size: 24px;
+  font-weight: 700;
+}
+main .parts .partbox li a .smallbox-info {
+  position: absolute;
+  top: 270px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+main .parts .partbox li a .smallbox-info .name {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+main .parts .partbox li a .smallbox-info .intr {
+  color: #999;
+}
+main .parts .partbox li a .smallbox-info .price {
+  color: #c00;
+  font-size: 22px;
+}
+main .parts .partbox .left img {
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+}
+main .parts .partbox .nomargin {
+  margin: 0;
+}
+main .life {
+  text-align: center;
+  font-size: 30px;
+}
+main .life h3 {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+main .life .imgbox {
+  position: relative;
+  display: block;
+  height: 450px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+main .life .imgbox img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+main .life .lifebox {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+main .life .lifebox li {
+  float: left;
+  position: relative;
+  width: 303px;
+  height: 375px;
+  margin-right: 9px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+main .life .lifebox li:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+main .life .lifebox li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+main .life .lifebox li a img {
+  width: 230px;
+  margin-top: 30px;
+}
+main .life .lifebox li a .box-ad-info {
+  position: absolute;
+  top: 267px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+main .life .lifebox li a .box-ad-info .name {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+}
+main .life .lifebox li a .box-ad-info .intr {
+  color: #fff;
+}
+main .life .lifebox li a .box-ad-info .price {
+  color: #ebce6b;
+  font-size: 24px;
+  font-weight: 700;
+}
+main .life .lifebox li a .smallbox-info {
+  position: absolute;
+  top: 270px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+main .life .lifebox li a .smallbox-info .name {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+main .life .lifebox li a .smallbox-info .intr {
+  color: #999;
+}
+main .life .lifebox li a .smallbox-info .price {
+  color: #c00;
+  font-size: 22px;
+}
+main .life .lifebox .left img {
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+}
+main .life .lifebox .nomargin {
+  margin: 0;
+}
+main .community {
+  font-size: 30px;
+}
+main .community h3 {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: center;
+}
+main .community .topic {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+main .community .topic li {
+  float: left;
+  position: relative;
+  width: 303px;
+  height: 400px;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+main .community .topic li:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+main .community .topic li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #515151;
+  text-decoration: none;
+}
+main .community .topic li a img {
+  width: 100%;
+}
+main .community .topic li a .userinfo {
+  padding-left: 15px;
+  line-height: 42px;
+}
+main .community .topic li a .userinfo .user {
+  height: 42px;
+  margin-top: 10px;
+}
+main .community .topic li a .userinfo .user img {
+  width: 34px;
+  height: 34px;
+  float: left;
+  border-radius: 50%;
+}
+main .community .topic li a .userinfo .user span {
+  margin-left: 15px;
+  font-size: 9.33333333px;
+  float: left;
+}
+main .community .topic li a .content {
+  padding: 10px 15px 15px 0;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: left;
+  height: 66px;
+  display: -webkit-box;
+  overflow: hidden;
+}
+main .community .topic li a .comment-tip {
+  color: #999;
+  margin-top: 10px;
+  text-align: left;
+}
+main .community .topic .nomargin {
+  margin: 0;
+}
+main .flyme {
+  font-size: 30px;
+}
+main .flyme h3 {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: center;
+}
+main .flyme .flymebox {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+main .flyme .flymebox li {
+  width: 303px;
+  height: 245px;
+  margin-right: 9px;
+  margin-bottom: 10px;
+  background: #fff;
+  float: left;
+}
+main .flyme .flymebox li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #515151;
+}
+main .flyme .flymebox li a img {
+  width: 100%;
+  height: 190px;
+}
+main .flyme .flymebox li a p {
+  height: 55px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 55px;
+}
+main .flyme .flymebox .nomargin {
+  margin: 0;
+}
+main .flyme .flymebox .bigbox {
+  width: 615px;
+}
+main .flyme .flymebox .bigbox img {
+  width: 100%;
+  height: 100%;
+}
+main .video {
+  font-size: 30px;
+}
+main .video h3 {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: center;
+}
+main .video .videobox {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+main .video .videobox li {
+  float: left;
+  width: 303px;
+  height: 244px;
+  margin-right: 9px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+main .video .videobox li a {
+  text-decoration: none;
+  color: #515151;
+  position: relative;
+}
+main .video .videobox li a img {
+  width: 303px;
+  height: 190px;
+}
+main .video .videobox li a p {
+  height: 55px;
+  font-size: 16px;
+  line-height: 55px;
+  text-align: center;
+}
+main .video .videobox li a span {
+  display: block;
+  position: absolute;
+  left: 260px;
+  bottom: 75px;
+  width: 30px;
+  height: 30px;
+  background: url(../img/main/i-71.png) no-repeat;
+  background-size: 100%;
+}
+main .video .videobox .nomargin {
+  margin: 0;
+}
+/*底部*/
+.meizu-footer {
+  width: 100%px;
+  height: 179px;
+  /* border: 1px solid red; */
+  background-color: #fff;
+}
+.meizu-footer-link {
+  width: 1240px;
+  height: 246px;
+  margin: 0 auto;
+}
+.meizu-row {
+  max-width: 1240px;
+  height: 123px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.meizu-footer-service {
+  width: 1000px;
+  float: left;
+  margin-top: 20px;
+}
+.meizu-footer-service li {
+  float: left;
+  text-align: center;
+  width: 15%;
+}
+.meizu-footer-service li a {
+  display: block;
+  line-height: 27px;
+  font-size: 12px;
+  color: #666;
+}
+.meizu-footer-service li img {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+  height: 39px;
+}
+.meizu-footer-service li span {
+  line-height: 30px;
+  color: #999;
+}
+.onlive-server {
+  float: right;
+  text-align: right;
+  margin-top: 20px;
+}
+.onlive-server span {
+  color: #999;
+  font-size: 12px;
+  line-height: 30px;
+}
+.tel {
+  color: #00c3f5;
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: -6px;
+  line-height: 40px;
+}
+.onlive-btn {
+  height: 30px;
+  padding: 0 16px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 3px;
+  display: inline-block;
+  font-size: 14px;
+  background: #0bbbef;
+}
+.meizu-footer-co {
+  width: 100%;
+  height: 53px;
+  /* border: 1px solid red; */
+  position: relative;
+}
+.meizu-footer-info-left {
+  width: 80%;
+  height: 18px;
+  margin-top: 30px;
+}
+.clearfix li {
+  float: left;
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+  height: 18px;
+  margin-right: 15px;
+}
+.clearfix li a {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  line-height: 18px;
+}
+.icon-lang-logo {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/main/i-83.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button-language {
+  position: relative;
+  display: block;
+  padding-left: 24px;
+}
+.clearfix li a:hover {
+  color: #00c3f5;
+}
+.meizu-footer-certificate {
+  padding-top: 10px;
+  font-size: 13px;
+  color: #ccc;
+  float: left;
+}
+.meizu-footer-certificate a {
+  font-size: 13px;
+  color: #ccc;
+}
+.ii-subscribe {
+  float: right;
+  position: relative;
+}
+.ii-subscribe img {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: 4px;
+  margin-right: 10px;
+}
+.ii-subscribe span {
+  border-right: 1px solid #ccc;
+  height: 18px;
+  margin-right: 10px;
+}
+.ii-subscribe a {
+  position: relative;
+}
+.box {
+  display: block;
+  position: absolute;
+  width: 149px;
+  height: 152px;
+  top: -170px;
+  left: -17px;
+}
+.box img {
+  width: 170px;
+  height: 152px;
+}
