@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.top {
+  width: 100%;
+  height: 68px;
+}
+.top .wrap {
+  width: 1200px;
+  height: 100%;
+  line-height: 68px;
+  margin: 0 auto;
+  position: relative;
+}
+.top .wrap a {
+  display: inline-block;
+  width: 110px;
+  height: 24px;
+  background: url(../../img/login/base.png) 0px 0px;
+}
+main {
+  width: 100%;
+  height: 750px;
+  background: url(../../img/login/pic-flyme.png) 50% 50%;
+}
+main .main {
+  width: 1240px;
+  height: 750px;
+  margin: 0 auto;
+  position: relative;
+}
+main .main .mainform {
+  width: 368px;
+  height: 457px;
+  position: absolute;
+  top: 24%;
+  right: 85px;
+  padding: 35px 35px 10px;
+  border-radius: 2px;
+  box-shadow: 0 6px 12px 0 rgba(138, 153, 150, 0.15);
+  line-height: 30px;
+}
+main .main .mainform .name {
+  margin-top: 35px;
+  text-align: center;
+  margin-bottom: 35px;
+  height: 30px;
+}
+main .main .mainform .name .userinput {
+  font-size: 18px;
+  color: #000;
+}
+main .main .mainform .phone-number {
+  width: 298px;
+  height: 46px;
+  border: 1px solid #a8a8a8;
+  overflow: hidden;
+  text-align: center;
+}
+main .main .mainform .phone-number .account-number {
+  width: 94% ;
+  height: 46px;
+  border: 0;
+  outline: none;
+  font-size: 14px;
+}
+main .main .mainform .keycode {
+  width: 298px;
+  height: 46px;
+  border: 1px solid #a8a8a8;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 20px;
+}
+main .main .mainform .keycode .keywords {
+  width: 94% ;
+  height: 46px;
+  border: 0;
+  outline: none;
+  font-size: 14px;
+}
+main .main .mainform .box {
+  display: inline-block;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #a8a8a8;
+  margin-top: 30px;
+}
+main .main .mainform .remember {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 26px;
+  height: 20px;
+}
+main .main .mainform .login {
+  display: block;
+  width: 298px;
+  height: 46px;
+  margin-top: 25px;
+  background: #1788e8;
+  color: #fff;
+  text-align: center;
+  line-height: 46px;
+}
+main .main .mainform .field {
+  margin-bottom: 5px;
+}
+main .main .mainform .field .forget {
+  float: right;
+  color: #387aff;
+  margin-top: 30px;
+  font-size: 14px;
+}
+main .main .mainform .field .zhuce {
+  float: left;
+  color: #387aff;
+  margin-top: 30px;
+  font-size: 14px;
+}
+footer {
+  width: 100%;
+  height: 130px;
+  border-top: solid 1px #E5E6E7;
+  color: black;
+}
+footer .inner {
+  width: 1000px;
+  margin: 24px auto 30px;
+  overflow: hidden;
+}
+footer .inner .innerlink {
+  float: left;
+}
+footer .inner .innerlink a {
+  color: black;
+  line-height: 50px;
+  font-size: 14px;
+}
+footer .inner .innerlink .footline {
+  background-color: #888;
+  margin: 0px 5px;
+  width: 1px;
+  height: 10px;
+  line-height: 50px;
+}
+footer .inner .service {
+  float: left;
+  margin-left: 36px;
+  line-height: 50px;
+  font-size: 14px;
+}
+footer .inner .service .label {
+  margin-right: 10px;
+}
+footer .inner .service .number {
+  margin-right: 20px;
+}
+footer .inner .service .service-online {
+  height: 20px;
+  line-height: 18px;
+  width: 64px;
+  color: white;
+  background-color: #32a5e7;
+  text-align: center;
+  display: inline-block;
+}
+footer .inner .outlink {
+  position: relative;
+  float: right;
+  padding-top: 9px;
+}
+footer .inner .outlink a {
+  margin-left: 10px;
+  display: inline-block;
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+  line-height: 50px;
+}
+footer .inner .outlink a .icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+footer .inner .outlink .sina i {
+  background: url(../../img/login/base.png) -218px -91px no-repeat;
+}
+footer .inner .outlink .wechat i {
+  background: url(../../img/login/base.png) -302px -91px no-repeat;
+}
+footer .inner .outlink .qzone i {
+  background: url(../../img/login/base.png) -344px -91px no-repeat;
+}
+footer .footerbottom {
+  width: 100%;
+}
+footer .footerbottom .bottomwrap {
+  width: 1000px;
+  margin: 0px auto;
+}
+footer .footerbottom .bottomwrap span {
+  color: #7f7f7f;
+  float: left;
+  font-size: 12px;
+}
+footer .footerbottom .bottomwrap a {
+  white-space: nowrap;
+  float: left;
+  color: #7f7f7f;
+  margin-left: 6px;
+  font-size: 12px;
+}
+footer .footerbottom .bottomwrap .tnt {
+  background: url(../../img/login/ghs.png) no-repeat;
+  background-size: 15px 14px;
+  padding-left: 18px;
+  background-position-y: center;
+}
