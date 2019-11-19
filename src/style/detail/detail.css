@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  list-style: none;
+  text-decoration: none;
+}
+.wrap {
+  width: 1240px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/*头部*/
+header {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+}
+header .wrap {
+  height: 82px;
+  z-index: 999;
+  /*导航*/
+  /*搜索框*/
+  /*用户登录与购物车*/
+}
+header .wrap h1 {
+  float: left;
+}
+header .wrap h1 .icon-meizu {
+  font-size: 24px;
+  line-height: 82px;
+  color: #00b9f2;
+}
+header .wrap .nav {
+  float: left;
+  height: 100%;
+  position: relative;
+  left: 190px;
+}
+header .wrap .nav li {
+  float: left;
+  height: 100%;
+}
+header .wrap .nav li a {
+  color: #000;
+  display: block;
+  text-decoration: none;
+  margin: 30px 20px;
+}
+header .wrap .nav li a:hover {
+  color: #00b9f2;
+}
+header .wrap .search {
+  float: left;
+  position: relative;
+  left: 190px;
+  background: gray;
+  margin: 26px 5px 0 10px;
+  width: 168px;
+  height: 28px;
+  border-radius: 14px;
+}
+header .wrap .search input {
+  display: block;
+  border: none;
+  padding: 0;
+  outline: 0;
+  width: 127px;
+  height: 20px;
+  margin-left: 15px;
+  margin-top: 5px;
+  transition: width 0.5s;
+  font-size: 12px;
+  line-height: 20px;
+  color: #333;
+  background: transparent;
+  box-sizing: content-box;
+  outline-offset: 0;
+}
+header .wrap .search .icon-glass {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-position: 50%;
+  cursor: pointer;
+  line-height: 32px;
+  text-align: center;
+  font-size: 22px;
+}
+header .wrap .user {
+  float: right;
+  color: #000;
+  font-weight: 900;
+  margin: 30px 10px 0 8px;
+}
+header .wrap .user .icon-my-select {
+  font-size: 26px;
+}
+header .wrap .user .icon-gouwuche {
+  font-size: 26px;
+  color: #000;
+  text-decoration: none;
+}
+/*固定框*/
+.fixed {
+  height: 70px;
+  background: #f6f8fb;
+  line-height: 70px;
+  position: sticky;
+  top: 0;
+  opacity: 0.9;
+}
+.fixed h3 {
+  font-size: 26px;
+  font-weight: normal;
+}

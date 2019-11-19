@@ -5,6 +5,18 @@
     list-style: none;
     text-decoration: none;
 }
+p{
+    width: 298px;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+}
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
 .top{
     width: 100%;
     height: 68px;
@@ -38,24 +50,24 @@ main{
     position: relative;
     .mainform{
     width: 368px;
-    height: 457px;
+    height: 517px;
     position: absolute;
     top: 24%;
     right: 85px;
-    padding: 35px 35px 10px;
+    padding: 20px 35px 5px;
     border-radius: 2px;
     box-shadow: 0 6px 12px 0 rgba(138,153,150,0.15);
     line-height: 30px;
     .name{
     
-    margin-top: 35px;
+    // margin-top: 35px;
     // width: 300px;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     height: 30px;
     .userinput{
         font-size: 18px;
-        color: #000;
+        color: #387aff;
 
     }
     }
@@ -66,62 +78,107 @@ main{
         // background: red;
         overflow: hidden;
         text-align: center;
-        // margin-bottom: 20px;
-        .dephone{
+        margin-bottom: 5px;
+        .account-number{
             width:94% ;
             height: 46px;
             border: 0;
             outline: none;
             font-size: 14px;
+            margin: 0 auto;
+            .number{
+         display: inline-block;
+         width: 60px;
+         border-right: 1px solid #DDD;
+         cursor: pointer;
+         font-size: 14px;
+         line-height: 46px;
+         .numbercode{
+             line-height: 22px;
+             height: 22px;
+             width: 60%;
+             color: grey;
+             text-align: center;
+             cursor: pointer;
+             vertical-align: middle;
+             font-size: 14px;
+             margin-bottom: 0 !important;
+             border: 0;
+         }
+         a{
+            display: inline-block;
+            width: 14px;
+            height: 8px;
+            background: url(../../img/reg/arrow-down.png) no-repeat center;
+            line-height: 46px;
+         }
+            }
+            #phone{
+                width: 74%;
+                height: 46px;
+                text-indent: 8px;
+    // height: 22px;
+                line-height: 46px;
+                vertical-align: middle;
+                font-size: 14px;
+                margin-bottom: 0 !important;
+                outline: none;
+                border: 0;
+            }
+            input{
+                width: 100%;
+                height: 46px;
+                text-indent: 8px;
+                line-height: 46px;
+                vertical-align: middle;
+                font-size: 14px;
+                margin-bottom: 0 !important;
+                outline: none;
+                border: 0; 
+                text-align: left;
+            }
            
            
         }
         
     }
-    .keycode{
-        width: 298px;
-       height: 46px;
-        border: 1px solid #a8a8a8;
-        // background: red;
+    .rememberField{
+        margin-bottom: 30px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+    a{
+        background: url(../../img/reg/quan.png) no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+        line-height: 20px;
         overflow: hidden;
-        text-align: center;
-        margin-top: 20px;
-        .keywords{
-            width:94% ;
-            height: 46px;
-            border: 0;
-            outline: none;
-            font-size: 14px;
-}
+        vertical-align: middle;
+        font-size: 12px;
+        width: 18px;
+    height: 18px;
 
 
     }
-    .box{
-        display: inline-block;
-        cursor: pointer;
-        width: 20px;
-        height: 20px;
-        border: 1px solid #a8a8a8;
-        margin-top: 30px;
-      
-        
+    }
+    .linka{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .linkb{
+        color: #387aff;
+        font-size: 12px;
+        line-height: 20px;
+    }
+   
+   
     
-
-    }
-    .remember{
-        display: inline-block;
-        // margin-left: 7px;
-        font-size: 14px;
-        line-height: 26px;
-        height: 20px;
-       
-        
-    }
     .login{
         display: block;
         width: 298px;
         height: 46px;
-        margin-top: 25px;
+        margin-top: 20px;
         background: #1788e8;
         color: #fff;
         text-align: center;
@@ -130,16 +187,11 @@ main{
     }
     .field{
         margin-bottom: 5px;
-        .forget{
-            float: right;
-            color: #387aff;
-            margin-top: 30px;
-            font-size: 14px;
-        }
+       
         .zhuce{
             float: left;
             color: #387aff;
-            margin-top: 30px;
+            margin-top: 5px;
             font-size: 14px;
         }
     }
