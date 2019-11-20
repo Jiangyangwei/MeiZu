@@ -11,7 +11,7 @@
 .wrap{
     width: 1240px;
     margin: 0 auto;
-    overflow: hidden;
+    // overflow: hidden;
 }
 .yuan(@args){
     border-radius: @args;
@@ -102,6 +102,47 @@ header{
             margin: 30px 10px 0 8px;
             .icon-my-select{
                 font-size: 26px;
+                // display: inline-block;
+                position: relative;
+                cursor: pointer;
+                .user-select{
+                    width: 80px;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;    
+                    background: #fff;
+                    // border: 1px solid gray;
+                    display: none;
+                    text-align: center;
+                    z-index: 1000;
+                    
+                  
+                    
+                    li{
+                        width: 100%;
+                        
+                        
+                        a{
+                            color: #000;
+                            font-size: 12px;
+                            font-weight: 100;
+                        }
+                    }
+                  
+                    
+                }
+               
+                // .user-select a:hover{
+                //     color: #00c3f5;
+                // }
+            }
+            .icon-my-select:hover .user-select{
+                display: block;
+               
+
+            }
+            .user-select li a:hover{
+                color: #00c3f5;
             }
             .icon-gouwuche{
                 font-size: 26px;
@@ -378,9 +419,8 @@ main{
                 margin-top: 30px;
             }
         }
-        .nomargin{
-            margin: 0;
-        }
+      
+       
     }
  }
  /*声学*/

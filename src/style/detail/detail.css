@@ -119,3 +119,300 @@ header .wrap .user .icon-gouwuche {
   font-size: 26px;
   font-weight: normal;
 }
+/*介绍*/
+main .main-top .preview {
+  float: left;
+  width: 560px;
+  margin-right: 40px;
+}
+main .main-top .preview .bp {
+  margin: 8px 0;
+  width: 560px;
+  height: 560px;
+}
+main .main-top .preview .bp a {
+  cursor: pointer;
+}
+main .main-top .preview .bp a img {
+  width: 100%;
+}
+main .main-top .preview .phonelist {
+  overflow: hidden;
+  margin-top: 10px;
+  margin-left: 24px;
+}
+main .main-top .preview .phonelist li {
+  display: inline-block;
+  margin: 0 24px;
+  overflow: hidden;
+  height: 102px;
+}
+main .main-top .preview .phonelist li a {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+main .main-top .preview .phonelist li a img {
+  max-width: 80px;
+  max-height: 80px;
+}
+main .main-top .buyphone {
+  float: left;
+  width: 640px;
+  font-size: 12px;
+  padding-top: 25px;
+  height: 900px;
+}
+main .main-top .buyphone h3 {
+  margin-bottom: 4px;
+  font-size: 28px;
+}
+main .main-top .buyphone p {
+  color: #e22841;
+  margin-bottom: 10px;
+}
+main .main-top .buyphone .price {
+  padding: 16px 0 12px;
+  background: #f4f6fa;
+}
+main .main-top .buyphone .price p {
+  color: #e02b41;
+  font-size: 36px;
+  font-weight: 500;
+}
+main .main-top .buyphone .price p span {
+  font-size: 24px;
+}
+main .main-top .buyphone .price .buy {
+  margin-left: 10px;
+  margin-top: 12px;
+  line-height: 22px;
+  color: #595959;
+}
+main .main-top .buyphone .price .buy span {
+  display: inline-block;
+  border-radius: 2px;
+  color: #e02b41;
+  width: 72px;
+  text-align: center;
+  line-height: 1;
+  padding: 4px 0;
+  background: #F2EAEF;
+  margin-right: 10px;
+}
+main .main-top .buyphone .price .buy a {
+  display: inline-block;
+  color: #27b3ff;
+  margin-left: 10px;
+}
+main .main-top .buyphone .post {
+  padding: 18px 0;
+  border: 1px dashed ;
+  border-color: transparent transparent #000;
+}
+main .main-top .buyphone .post p {
+  color: #8c8c8c;
+  line-height: 20px;
+}
+main .main-top .buyphone .post p a {
+  color: #27a3ff;
+}
+main .main-top .buyphone .intro {
+  margin-top: 20px;
+}
+main .main-top .buyphone .intro > p {
+  height: 42px;
+  margin-bottom: 10px;
+  color: #999;
+}
+main .main-top .buyphone .intro > p span {
+  display: inline-block;
+  width: 160px;
+  height: 100%;
+  text-align: center;
+  border: 1px solid #000;
+  line-height: 42px;
+  margin: 0 10px;
+}
+main .main-top .buyphone .intro > p .lf {
+  width: 75px;
+  text-align: justify;
+  border: 0;
+}
+main .main-top .buyphone .intro > p .num {
+  height: 100%;
+  width: 160px;
+  margin: 0 10px;
+  border: solid 1px #777;
+}
+main .main-top .buyphone .intro .buy {
+  height: 54px;
+  margin-top: 50px;
+}
+main .main-top .buyphone .intro .buy a {
+  font-size: 24px;
+  padding: 15px 0;
+  color: #27B3FF;
+  display: inline-block;
+  width: 210px;
+  text-align: center;
+  margin: 0 10px;
+  border: 1px solid #27B3FF;
+  border-radius: 5px;
+}
+.meizu-footer {
+  width: 100%px;
+  height: 179px;
+  /* border: 1px solid red; */
+  background-color: #fff;
+}
+.meizu-footer-link {
+  width: 1240px;
+  height: 246px;
+  margin: 0 auto;
+}
+.meizu-row {
+  max-width: 1240px;
+  height: 123px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.meizu-footer-service {
+  width: 1000px;
+  float: left;
+  margin-top: 20px;
+}
+.meizu-footer-service li {
+  float: left;
+  text-align: center;
+  width: 15%;
+}
+.meizu-footer-service li a {
+  display: block;
+  line-height: 27px;
+  font-size: 12px;
+  color: #666;
+}
+.meizu-footer-service li img {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+  height: 39px;
+}
+.meizu-footer-service li span {
+  line-height: 30px;
+  color: #999;
+}
+.onlive-server {
+  float: right;
+  text-align: right;
+  margin-top: 20px;
+}
+.onlive-server span {
+  color: #999;
+  font-size: 12px;
+  line-height: 30px;
+}
+.tel {
+  color: #00c3f5;
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: -6px;
+  line-height: 40px;
+}
+.onlive-btn {
+  height: 30px;
+  padding: 0 16px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 3px;
+  display: inline-block;
+  font-size: 14px;
+  background: #0bbbef;
+}
+.meizu-footer-co {
+  width: 100%;
+  height: 53px;
+  /* border: 1px solid red; */
+  position: relative;
+}
+.meizu-footer-info-left {
+  width: 80%;
+  height: 18px;
+  margin-top: 30px;
+}
+.clearfix li {
+  float: left;
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+  height: 18px;
+  margin-right: 15px;
+}
+.clearfix li a {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  line-height: 18px;
+}
+.icon-lang-logo {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/main/i-83.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button-language {
+  position: relative;
+  display: block;
+  padding-left: 24px;
+}
+.clearfix li a:hover {
+  color: #00c3f5;
+}
+.meizu-footer-certificate {
+  padding-top: 10px;
+  font-size: 13px;
+  color: #ccc;
+  float: left;
+}
+.meizu-footer-certificate a {
+  font-size: 13px;
+  color: #ccc;
+}
+.ii-subscribe {
+  float: right;
+  position: relative;
+}
+.ii-subscribe img {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: 4px;
+  margin-right: 10px;
+}
+.ii-subscribe span {
+  border-right: 1px solid #ccc;
+  height: 18px;
+  margin-right: 10px;
+}
+.ii-subscribe a {
+  position: relative;
+}
+.box {
+  display: block;
+  position: absolute;
+  width: 149px;
+  height: 152px;
+  top: -170px;
+  left: -17px;
+}
+.box img {
+  width: 170px;
+  height: 152px;
+}

@@ -3,6 +3,7 @@ define(['jquery', 'lazyload'], function($) {
         detail: function() {
             let baseUrl = "http://127.0.0.1:8080/month2-2/MeiZu";
             let id = location.search.split('=')[1];
+            console.log(id);
             $.ajax({ //ajax请求后端数据
                 type: "get",
                 url: `${baseUrl}/lib/detail.php`,

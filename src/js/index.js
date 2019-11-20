@@ -61,6 +61,43 @@ define(['jquery'], function($) {
 
             })
         },
+        xuanRan: function() {
+            console.log(1)
+            let baseUrl = "http://127.0.0.1:8080/month2-2/MeiZu";
+            $.ajax({
+                url: `${baseUrl}/lib/xuanRan.php`,
+                type: "get",
+                dataType: "json",
+                success: function(res) {
+                    console.log(res);
+                    let temp = '';
+                    res.forEach(elm => {
+                        // console.log(elm);
+                        sp = JSON.parse(elm.smallpic)[0].small;
+                        console.log(sp);
+                        temp = `
+                        <li class="smallimg">
+                        <a href="${baseUrl}/src/html/detail.html?id=${elm.id}" target="_blank">
+                        <span>领券</span>
+                        <img src="${sp}" alt="">
+                            <p class="name">${elm.name}</p>
+                            <p class="intr">魅族牛逼!!</p>
+                            <p class="price">￥${elm.price}</p>
+                        </a>
+                    </li>
+                        `;
+                        // console.log(temp)
+                        $('.phone').append(temp);
+                        if (elm.id % 4 == 0) {
+                            $('.smallimg').eq(3).css('margin', 0);
+                            $('.smallimg').eq(7).css('margin', 0);
+                        }
+                    })
+
+                }
+            });
+
+        },
 
 
     }

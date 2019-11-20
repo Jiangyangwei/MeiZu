@@ -10,7 +10,6 @@
 .wrap {
   width: 1240px;
   margin: 0 auto;
-  overflow: hidden;
 }
 /*头部*/
 header {
@@ -101,6 +100,32 @@ header .wrap .user {
 }
 header .wrap .user .icon-my-select {
   font-size: 26px;
+  position: relative;
+  cursor: pointer;
+}
+header .wrap .user .icon-my-select .user-select {
+  width: 80px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  display: none;
+  text-align: center;
+  z-index: 1000;
+}
+header .wrap .user .icon-my-select .user-select li {
+  width: 100%;
+}
+header .wrap .user .icon-my-select .user-select li a {
+  color: #000;
+  font-size: 12px;
+  font-weight: 100;
+}
+header .wrap .user .icon-my-select:hover .user-select {
+  display: block;
+}
+header .wrap .user .user-select li a:hover {
+  color: #00c3f5;
 }
 header .wrap .user .icon-gouwuche {
   font-size: 26px;
@@ -366,9 +391,6 @@ main .main-phone .phone .smallimg .price {
 main .main-phone .phone .smallimg img {
   width: 230px;
   margin-top: 30px;
-}
-main .main-phone .phone .nomargin {
-  margin: 0;
 }
 main .music {
   font-size: 30px;
