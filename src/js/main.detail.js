@@ -11,9 +11,12 @@ require.config({
 })
 require(['jquery', 'detail', 'cookie'], function($, detail, cookie) {
     detail.detail(function(id, price, pic, title) {
+        detail.tabs();
         $('.acker').on('click', function() {
             detail.addIten(id, price, $('.num').val(), pic, title)
-        })
+        });
+
     });
-    detail.addIten();
+    // detail.addIten();
+
 })

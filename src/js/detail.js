@@ -17,9 +17,10 @@ define(['jquery', 'lazyload', 'cookie'], function($, lazyload, cookie) {
                     let pic = JSON.parse(res.bigpic)[0];
                     let title = JSON.parse(res.title)[0];
                     let intr = JSON.parse(res.intr)[0];
+
                     //页面元素渲染
                     let phonelist = `
-                    <h3>${name}</h3>
+                  
                     <li>
                     <a href="javascript:;"><img src="${pic.bg01}" alt=""></a>
                 </li>
@@ -108,6 +109,15 @@ define(['jquery', 'lazyload', 'cookie'], function($, lazyload, cookie) {
                 shop.push(product);
             }
             cookie.set('shop', JSON.stringify(shop))
+        },
+        tabs: function() {
+            $('.phonelist>li>a>img').on('click', function() {
+                console.log($(this));
+                $('.bp>a>img').get(0).src = $(this).get(0).src;
+
+
+            })
         }
+
     }
 })
