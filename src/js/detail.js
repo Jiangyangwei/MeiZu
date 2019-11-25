@@ -1,9 +1,9 @@
-define(['jquery', 'lazyload'], function($) {
+define(['jquery', 'lazyload', 'cookie'], function($, lazyload, cookie) {
     return {
-        detail: function() {
-            let baseUrl = "http://127.0.0.1:8080/month2-2/MeiZu";
+        detail: function(callback) {
+            let baseUrl = "http://localhost:8080/month2-2/MeiZu";
             let id = location.search.split('=')[1];
-            console.log(id);
+
             $.ajax({ //ajax请求后端数据
                 type: "get",
                 url: `${baseUrl}/lib/detail.php`,
@@ -12,13 +12,12 @@ define(['jquery', 'lazyload'], function($) {
                 },
                 dataType: "json",
                 success: function(res) {
-                    console.log(res)
+
                     let name = res.name;
                     let pic = JSON.parse(res.bigpic)[0];
                     let title = JSON.parse(res.title)[0];
                     let intr = JSON.parse(res.intr)[0];
-                    console.log(intr)
-                        //页面元素渲染
+                    //页面元素渲染
                     let phonelist = `
                     <h3>${name}</h3>
                     <li>
@@ -56,15 +55,15 @@ define(['jquery', 'lazyload'], function($) {
                         <p><span class="lf">颜色分类</span><span>蓝</span> <span>绿</span><span>橙</span></p>
                         <p><span class="lf">内存容量</span><span>6+128G</span><span>8+128G</span></p>
                         <p><span class="lf">选择套餐</span><span>官方标配</span><span>碎屏保套餐</span></p>
-                        <p><span class="lf">数量</span><input type="number" placeholder="1" min="1" max="${res.num}" class="num"></p>
-                        <p class="buy"><a href="">立即购买</a><a href="">加入购物车</a></p>
+                        <p><span class="lf">数量</span><input type="number" value="1" min="1" max="${res.num}" class="num"></p>
+                        <p class="buy"><a href="" class="tre">立即购买</a><span class="acker">加入购物车</span></p>
                     </div>
                 `;
                     let intro = `
                 <div class="wrap">
                 <img class="lazy" data-original="${intr.tit01}">
                 <img class="lazy" data-original="${intr.tit02}">
-                <img class="lazy" data-original="${intr.tit03}">
+                <img class="lazy" data-original="${intr.tit03}" style="display:block">
                 <img class="lazy" data-original="${intr.tit04}">
             </div>
                 `;
@@ -78,8 +77,37 @@ define(['jquery', 'lazyload'], function($) {
                         $("img.lazy").lazyload({ effect: "fadeIn" });
                     });
                     $('.title').append(intro);
+
+                    callback && callback(res.id, res.price, res.smallpic, res.name);
                 }
             });
+
+
+
+        },
+        addIten: function(id, price, num, pic, title) {
+            let product = {
+                id: id,
+                num: num,
+                price: price,
+                pic: pic,
+                title: title
+            };
+            let shop = cookie.get('shop');
+            if (shop) {
+                shop = JSON.parse(shop);
+                if (shop.some(elm => elm.id == id)) {
+                    shop.forEach(elm => {
+                        elm.id == id ? elm.num = num : null;
+                    })
+                } else {
+                    shop.push(product);
+                };
+            } else {
+                shop = [];
+                shop.push(product);
+            }
+            cookie.set('shop', JSON.stringify(shop))
         }
     }
 })

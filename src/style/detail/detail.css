@@ -200,7 +200,12 @@ main .main-top .buyphone .price .buy span {
   background: #F2EAEF;
   margin-right: 10px;
 }
-main .main-top .buyphone .price .buy a {
+main .main-top .buyphone .price .buy .tre {
+  display: inline-block;
+  color: #27b3ff;
+  margin-left: 10px;
+}
+main .main-top .buyphone .price .buy .acker {
   display: inline-block;
   color: #27b3ff;
   margin-left: 10px;
@@ -249,7 +254,8 @@ main .main-top .buyphone .intro .buy {
   height: 54px;
   margin-top: 50px;
 }
-main .main-top .buyphone .intro .buy a {
+main .main-top .buyphone .intro .buy a,
+main .main-top .buyphone .intro .buy span {
   font-size: 24px;
   padding: 15px 0;
   color: #27B3FF;
@@ -259,6 +265,8 @@ main .main-top .buyphone .intro .buy a {
   margin: 0 10px;
   border: 1px solid #27B3FF;
   border-radius: 5px;
+  cursor: pointer;
+  vertical-align: middle;
 }
 .meizu-footer {
   width: 100%px;

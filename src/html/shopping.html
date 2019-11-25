@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/shopping/shopping.css">
+    <link rel="stylesheet" href="../style/shopping/carts.css">
+    <script src="../js/require.js" data-main="../js/main.shopping.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/carts.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <div class="logo">
+                <a href=""></a>
+            </div>
+            <ul class="zt">
+                <li class="black">购物车 &nbsp;&gt; </li>
+                <li>确认订单 &nbsp;&gt; </li>
+                <li>在线支付 &nbsp;&gt; </li>
+                <li>完成</li>
+
+            </ul>
+            <ul class="right">
+                <li>
+                    <a href="">我的订单</a>
+                </li>
+                <li>
+                    <a href="./login.html">登录</a>
+                </li>
+                <li><a href="./reg.html">注册</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="cartMain">
+            <div class="cartMain_hd">
+                <ul class="order_lists cartTop">
+                    <li class="list_chk">
+                        <!--所有商品全选-->
+                        <input type="checkbox" id="all" class="whole_check">
+                        <label for="all"></label> 全选
+                    </li>
+                    <li class="list_con">商品信息</li>
+                    <li class="list_info">商品参数</li>
+                    <li class="list_price">单价</li>
+                    <li class="list_amount">数量</li>
+                    <li class="list_sum">金额</li>
+                    <li class="list_op">操作</li>
+                </ul>
+            </div>
+
+            <div class="cartBox">
+                <div class="shop_info">
+                    <div class="all_check">
+                        <!--店铺全选-->
+                        <input type="checkbox" id="shop_a" class="shopChoice">
+                        <label for="shop_a" class="shop"></label>
+                    </div>
+
+                </div>
+                <div class="order_content">
+                    <!--  <ul class="order_lists">
+                        <li class="list_chk">
+                            <input type="checkbox" id="checkbox_2" class="son_check">
+                            <label for="checkbox_2"></label>
+                        </li>
+                        <li class="list_con">
+                            <div class="list_img">
+                                <a href="javascript:;"><img src="./images/1.png" alt=""></a> 
+                            </div>
+                            <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+                        </li>
+                        <li class="list_info">
+                            <p>规格：默认</p>
+                            <p>尺寸：16*16*3(cm)</p>
+                        </li>
+                        <li class="list_price">
+                            <p class="price">￥980</p>
+                        </li>
+                        <li class="list_amount">
+                            <div class="amount_box">
+                                <a href="javascript:;" class="reduce reSty">-</a>
+                                <input type="text" value="1" class="sum">
+                                <a href="javascript:;" class="plus">+</a>
+                            </div>
+                        </li>
+                        <li class="list_sum">
+                            <p class="sum_price">￥980</p>
+                        </li>
+                        <li class="list_op">
+                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                        </li>
+                    </ul>-->
+                </div>
+            </div>
+
+            <!--底部-->
+            <div class="bar-wrapper">
+                <div class="bar-right">
+                    <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                    <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                    <div class="calBtn"><a href="javascript:;">结算</a></div>
+                </div>
+            </div>
+        </section>
+        <section class="model_bg"></section>
+        <section class="my_model">
+            <p class="title">删除宝贝<span class="closeModel">X</span></p>
+            <p>您确认要删除该宝贝吗？</p>
+            <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+        </section>
+    </main>
+
+    <div class="meizu-footer">
+
+        <!-- 魅族官网底部 版心 -->
+        <div class="meizu-footer-link">
+            <div class="meizu-row">
+                <ul class="meizu-footer-service">
+                    <li>
+                        <a href="#">
+                            <img src="../img/main/i-77.png" alt="">
+                            <span>满80免运费</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/main/i-78.png" alt="">
+                            <span>100+次日送达</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/main/i-79.png" alt="">
+                            <span>7天无理由退货</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/main/i-80.png" alt="">
+                            <span>15天换货保障</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/main/i-81.png" alt="">
+                            <span>1年免费保修</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/main/i-82.png" alt="">
+                            <span>上门快修</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 左侧图片部分结束 -->
+
+                <div class="onlive-server">
+                    <span>周一至周日 7:30-24:00</span>
+                    <p class="tel">400-788-3333</p>
+                    <a href="#" class="onlive-btn">在线客服</a>
+                </div>
+
+            </div>
+            <!-- 魅族官网 版心 上半部分结束 -->
+
+            <!-- 魅族官网底部下半部分 -->
+            <div class="meizu-footer-co">
+                <div class="meizu-footer-info-left">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">了解魅族</a>
+                        </li>
+                        <li>
+                            <a href="#">加入我们</a>
+                        </li>
+                        <li>
+                            <a href="#">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="#">Flyme</a>
+                        </li>
+                        <li>
+                            <a href="#">魅族社区</a>
+                        </li>
+                        <li>
+                            <a href="#">天猫旗舰店</a>
+                        </li>
+                        <li>
+                            <a href="#">问题反馈</a>
+                        </li>
+                        <li>
+                            <a href="#">线上销售授权名单公示</a>
+                        </li>
+                        <li>
+                            <a href="#">出版经营许可证</a>
+                        </li>
+                        <li style="border: 0px;">
+
+                            <a href="#" class="button-language">
+                                 简体中文
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="meizu-footer-certificate">
+
+
+                    ©2019 Meizu Telecom Equipment Co., Ltd. All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <a href="#" class="meizu-footer-info">粤ICP备13003602号</a>
+                    <a href="#" class="meizu-footer-info">合字B2-20170010 </a>
+                    <a href="#" class="meizu-footer-info">营业执照</a>
+                    <a href="#" class="meizu-footer-info">法律声明</a>
+                    <a href="#" class="meizu-footer-info">粤公网安备 44049102496009 号 </a>
+                </div>
+                <div class="ii-subscribe">
+                    <a href="#">
+                        <i class="box" id="huan" style="display: none;">
+                              <img src="../img/main/i-72.png" alt="">
+                          </i>
+                        <a href="#" class="tian" id="tu">
+                            <img src="../img/main/i-73.png" alt="">
+                        </a>
+
+                    </a>
+                    <span></span>
+                    <a href="#">
+                        <img src="../img/main/i-74.png" alt="">
+                    </a>
+                    <span></span>
+                    <a href="#">
+                        <img src="../img/main/i-75.png" alt="">
+                    </a>
+                    <span></span>
+                    <a href="#">
+                        <img src="../img/main/i-76.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- 魅族官网底部下半部分结束 -->
+
+        </div>
+    </div>
+    <!-- 魅族官网底部版心结束 -->
+    </div>
+    <!-- 魅族官网底部结束 -->
+
+
+</body>
+
+</html>

@@ -63,7 +63,7 @@ define(['jquery'], function($) {
         },
         xuanRan: function() {
             console.log(1)
-            let baseUrl = "http://127.0.0.1:8080/month2-2/MeiZu";
+            let baseUrl = "http://localhost:8080/month2-2/MeiZu";
             $.ajax({
                 url: `${baseUrl}/lib/xuanRan.php`,
                 type: "get",
