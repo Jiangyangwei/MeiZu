@@ -8,19 +8,21 @@
     list-style: none;
     text-decoration: none;
 }
+
 .wrap{
     width: 1240px;
     margin: 0 auto;
     // overflow: hidden;
 }
-.yuan(@args){
-    border-radius: @args;
-}
+// .yuan(@args){
+//     border-radius: @args;
+// }
 /*头部*/
 header{
     position: absolute;
     z-index: 999;
     width: 100%;
+    // overflow: hidden;
     .wrap{
         height: 82px;
         z-index: 999;
@@ -126,6 +128,7 @@ header{
                             color: #000;
                             font-size: 12px;
                             font-weight: 100;
+                          
                         }
                     }
                   
@@ -209,35 +212,38 @@ header{
 }
 /*轮播图*/
 .banner{
-    height: 680px;
     position: relative;
-    overflow: hidden;
+    height: 670px;
+    margin:0 auto;
+    width:100%;
+    // overflow: hidden;
        nav{
+           border: 10px solid #000;
+           border-left: none;
+           border-right: none;
            position: absolute;
            left: 0;
            top: 0;
-           width: 15192px;
-           height: 680px;
-           z-index: 3;
+           width: 800%;
+        //    z-index: 3;
+           height: 670px;
            li{
+               border: 10px solid #000;
                float: left;
-               width: 1899px;
-               height: 100%;
-               overflow: hidden;
-            a{
+               width:100%;
+               height: 670px;
+            //    overflow: hidden;
+               position: relative;
+               img{
                 display: block;
-                width: 1899px;
-                height: 100%;
-                position: relative;
-                left: 0;
-                top: 0;
-                img{
-                    position: absolute;
-                    left: 50%;
-                    top: 0;
-                    transform: translateX(-50%);
-                }
+                width: 100%;
+                height: 680px;
+                // position: absolute;
+                // // left: 50%;
+                // top: 0;
+                // // transform: translateX(-50%);
             }
+            // }
            }
        }
        .btn{
@@ -800,7 +806,7 @@ main{
                             width: 34px;
                             height: 34px;
                             float: left;
-                            .yuan(50%);
+                            
                         }
                         span{
                             margin-left: 15px;

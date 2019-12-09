@@ -9,6 +9,6 @@ require.config({
     }
 })
 require(['jquery', 'loginad'], function($, loginad) {
-    loginad.login();
+    loginad.login(); //登陆数据与数据库匹配功能
 
 })

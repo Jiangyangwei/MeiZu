@@ -35,7 +35,7 @@ define(['jquery', 'lazyload', 'cookie'], function($, lazyload, cookie) {
                 </li>`;
                     let buyphone = `
                 <h3>${title.name}</h3>
-                    <p>
+                    <p class="wwe">
                     ${title.int}
                     </p>
                     <div class="price">
@@ -57,7 +57,7 @@ define(['jquery', 'lazyload', 'cookie'], function($, lazyload, cookie) {
                         <p><span class="lf">内存容量</span><span>6+128G</span><span>8+128G</span></p>
                         <p><span class="lf">选择套餐</span><span>官方标配</span><span>碎屏保套餐</span></p>
                         <p><span class="lf">数量</span><input type="number" value="1" min="1" max="${res.num}" class="num"></p>
-                        <p class="buy"><a href="" class="tre">立即购买</a><span class="acker">加入购物车</span></p>
+                        <p class="buy"><a href="./shopping.html" class="tre">立即购买</a><a  href="javascript:;"class="acker">加入购物车</a></p>
                     </div>
                 `;
                     let intro = `

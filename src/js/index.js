@@ -1,6 +1,7 @@
 define(['jquery'], function($) {
     return {
         banner: function() {
+            console.log(document.body.offsetWidth)
             var left = 0,
                 index = 0;
             var timer = null;
@@ -9,7 +10,7 @@ define(['jquery'], function($) {
             var att = function() {
                 timer = setInterval(() => {
                     if (index < 7) {
-                        left -= 1899;
+                        left -= 2560;
                         $('.move').animate({ left: left });
                         an.eq(index + 1).addClass('scroll').siblings().removeClass('scroll');
                         index++;
@@ -22,7 +23,7 @@ define(['jquery'], function($) {
                         $('.move').stop(true, true).css('left', left);
 
                     }
-                }, 3000);
+                }, 100000);
             }
             att();
 
@@ -36,7 +37,7 @@ define(['jquery'], function($) {
             an.on('click', function() {
                 clearInterval(timer);
                 index = $(this).index();
-                left = -index * 1899;
+                left = -index * 2560;
                 $('.move').animate({ left: left });
                 an.eq(index).addClass('scroll').siblings().removeClass('scroll');
                 att();

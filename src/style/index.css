@@ -174,37 +174,32 @@ header .color1 {
 }
 /*轮播图*/
 .banner {
-  height: 680px;
   position: relative;
-  overflow: hidden;
+  height: 670px;
+  margin: 0 auto;
+  width: 100%;
 }
 .banner nav {
+  border: 10px solid #000;
+  border-left: none;
+  border-right: none;
   position: absolute;
   left: 0;
   top: 0;
-  width: 15192px;
-  height: 680px;
-  z-index: 3;
+  width: 800%;
+  height: 670px;
 }
 .banner nav li {
+  border: 10px solid #000;
   float: left;
-  width: 1899px;
-  height: 100%;
-  overflow: hidden;
-}
-.banner nav li a {
-  display: block;
-  width: 1899px;
-  height: 100%;
+  width: 100%;
+  height: 670px;
   position: relative;
-  left: 0;
-  top: 0;
 }
-.banner nav li a img {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
+.banner nav li img {
+  display: block;
+  width: 100%;
+  height: 680px;
 }
 .banner .btn {
   width: 400px;
@@ -764,7 +759,6 @@ main .community .topic li a .userinfo .user img {
   width: 34px;
   height: 34px;
   float: left;
-  border-radius: 50%;
 }
 main .community .topic li a .userinfo .user span {
   margin-left: 15px;

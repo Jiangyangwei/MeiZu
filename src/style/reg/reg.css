@@ -169,6 +169,10 @@ main .main .mainform .login {
   line-height: 46px;
   cursor: pointer;
 }
+main .main .mainform .login a {
+  width: 100%;
+  height: 100%;
+}
 main .main .mainform .field {
   margin-bottom: 5px;
 }

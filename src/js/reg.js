@@ -10,6 +10,6 @@
  })
  require(['jquery', 'regad'],
      function($, regad) {
-         regad.regtt();
+         regad.regtt(); //注册验证格式是否正确功能
      }
  )

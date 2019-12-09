@@ -172,9 +172,15 @@ main{
                margin-bottom: 4px;
                font-size: 28px;
            }
+           .wwe{
+               height: 72px;
+               overflow: hidden;
+           }
            p{
               color:#e22841 ; 
-              margin-bottom: 10px;
+            //   margin-bottom: 10px;
+            //   height:72px;
+            //   overflow: hidden;
            }
            .price{
                padding: 16px 0 12px;
@@ -203,16 +209,22 @@ main{
                        background: #F2EAEF;
                        margin-right: 10px;
                    }
+                   a{
+                       display:block;
+                       overflow: hidden;
+                   }
                    .tre{
                        display: inline-block;
                        color: #27b3ff;
                        margin-left: 10px;
+                        overflow: none;
                    }
                    .acker{
                     display: inline-block;
                     color: #27b3ff;
                     margin-left: 10px;
-                    
+                    overflow: none;
+                  
                    }
                }
            }
@@ -234,9 +246,12 @@ main{
                    height: 42px;
                    margin-bottom: 10px;
                    color: #999;
+                //    display: flex;
+                //    justify-content: space-around;
                    span{
                        display: inline-block;
-                       width: 160px;
+                       width:auto;
+                     padding: 0 30px;
                        height: 100%;
                        text-align: center;
                        border: 1px solid #000;
@@ -247,6 +262,7 @@ main{
                        width: 75px;
                        text-align: justify;
                        border: 0;
+                       padding: 0;
                    }
                    .num{
                        height: 100%;
